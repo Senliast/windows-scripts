@@ -7,11 +7,11 @@ You can download latest release from: https://github.com/Senliast/Tasker_scripts
 
 # Installation
 1. Enable execution of PowerShell scripts on your system, if not already. In order to do this:
- for Windows "Home" editions:
+ - for Windows "Home" editions:
    1. Start PowerShell as administrator.
    2. Type "Set-ExecutionPolicy -Scope LocalMachine Unrestricted", press enter.
    3. Confirm the prompt.
- for Windows "Pro" editions:
+ - for Windows "Pro" editions:
    1. Open Group Policy Editor.
    2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
    3. Open the setting "Allow script executing", select "Allow all scripts", press OK.
