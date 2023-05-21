@@ -43,7 +43,7 @@ A: Some apps insist to be started from Steam directly (steam://rungameid) and ot
 
 
 # Copyright and 3rd-party authors and sources
-The information from following websites and authors has been used for creating this script:
+The information from following websites and authors has been used for creating this script:  
 https://developer.valvesoftware.com/  
 https://www.makeuseof.com/how-to-downgrade-steam-games/  
 https://steamdb.info/  
