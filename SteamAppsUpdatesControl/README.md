@@ -22,11 +22,11 @@ You can download latest release from: https://github.com/Senliast/Tasker_scripts
 1. Remove all apps from list.
 2. Remove all files from the script.
 3. If you dont use any other PowerShell scripts - disable script execution:
- for Windows "Home" editions:
+ - for Windows "Home" editions:
    1. Start PowerShell as administrator.
    2. Type "Set-ExecutionPolicy -Scope LocalMachine Undefined", press enter.
    3. Confirm the prompt.
- for Windows "Pro" editions:
+ - for Windows "Pro" editions:
    1. Open Group Policy Editor.
    2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
    3. Open the setting "Allow script executing", select "Not configured", press OK.
@@ -44,15 +44,15 @@ A: Some apps insist to be started from Steam directly (steam://rungameid) and ot
 
 # Copyright and 3rd-party authors and sources
 The information from following websites and authors has been used for creating this script:
-https://developer.valvesoftware.com/
-https://www.makeuseof.com/how-to-downgrade-steam-games/
-https://steamdb.info/
-https://www.reddit.com/r/Steam/comments/611h5e/guide_how_to_download_older_versions_of_a_game_on/
-https://www.reddit.com/r/Steam/comments/kbcl2x/why_is_there_no_option_to_turn_off_auto_updates/
-https://steamcommunity.com/sharedfiles/filedetails/?id=1916008329
-https://chat.openai.com/
-https://stackoverflow.com
-https://ss64.com/ps/syntax-arrays.html
-https://learn.microsoft.com/de-de/powershell/scripting/learn/deep-dives/everything-about-arrays?view=powershell-7.3
-https://www.itprotoday.com/powershell/how-add-new-line-powershell-string
-https://stackoverflow.com/questions/9701840/how-to-create-a-shortcut-using-powershell
+https://developer.valvesoftware.com/  
+https://www.makeuseof.com/how-to-downgrade-steam-games/  
+https://steamdb.info/  
+https://www.reddit.com/r/Steam/comments/611h5e/guide_how_to_download_older_versions_of_a_game_on/  
+https://www.reddit.com/r/Steam/comments/kbcl2x/why_is_there_no_option_to_turn_off_auto_updates/  
+https://steamcommunity.com/sharedfiles/filedetails/?id=1916008329  
+https://chat.openai.com/  
+https://stackoverflow.com  
+https://ss64.com/ps/syntax-arrays.html  
+https://learn.microsoft.com/de-de/powershell/scripting/learn/deep-dives/everything-about-arrays?view=powershell-7.3  
+https://www.itprotoday.com/powershell/how-add-new-line-powershell-string  
+https://stackoverflow.com/questions/9701840/how-to-create-a-shortcut-using-powershell  
