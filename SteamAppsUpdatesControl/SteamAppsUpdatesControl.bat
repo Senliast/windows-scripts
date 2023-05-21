@@ -1,0 +1,1 @@
+start powershell.exe -file C:\ServiceData\SteamAppsUpdatesControl\SteamAppsUpdatesControl.ps1
