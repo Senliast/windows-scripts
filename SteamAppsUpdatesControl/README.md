@@ -3,7 +3,7 @@ This script makes it possible to control the automatic updates of apps and games
 
 Obviously, as this is a PowerShell script, the execution of PowerShell scripts must be allowed on your system, in order for it to work. This script will at all case work on Windows 8 and newer, i am not sure about Windows 7, as PowerShell here is on very early state and may lack some functions. To start the script after installation - open the Steam-apps updates control.lnk .
 
-You can download latest release from: https://github.com/Senliast/Tasker_scripts/releases/tag/SteamAppsUpdatesControl_v1.0 (please download zip-file).
+You can download latest release from: https://github.com/Senliast/Windows_scripts/releases/tag/SteamAppsUpdatesControl_v1.0 (please download zip-file).
 
 # Installation
 1. Enable execution of PowerShell scripts on your system, if not already. In order to do this:
@@ -15,7 +15,7 @@ You can download latest release from: https://github.com/Senliast/Tasker_scripts
    1. Open Group Policy Editor.
    2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
    3. Open the setting "Allow script executing", select "Allow all scripts", press OK.
-2. Place the files and folders (except Info.txt and Steam-apps updates control.lnk) into C:\ServiceData\SteamAppsUpdatesControl\ . If you want to place it somewhere else - edit the path in the SteamAppsUpdatesControl.bat .
+2. Place the files and folders (except Info.txt and Steam-apps updates control.lnk) into C:\ServiceData\SteamAppsUpdatesControl\ . If you want to place it somewhere else - edit the path in the SteamAppsUpdatesControl.bat and Steam-apps updates control.lnk .
 3. Place the Steam-apps updates control.lnk (shortcut) in a comfortable location for you (for example on Desktop). Start it in order to start the script.
 
 # Uninstalling
@@ -34,11 +34,11 @@ You can download latest release from: https://github.com/Senliast/Tasker_scripts
 
 
 # Questions and answers
-Q: How does it work?
-A: This script removes the "appmanifest" file, which Steam uses to detect that an app or game is installed and which holds information about the app. After removing it, Steam does not see the app anymore and therefore will not update it anymore?
+Q: How does it work?  
+A: This script removes the "appmanifest" file, which Steam uses to detect that an app or game is installed and which holds information about the app. After removing it, Steam does not see the app anymore and therefore will not update it anymore?  
 
-Q: Does it have any disadvantages?
-A: Some apps insist to be started from Steam directly (steam://rungameid) and otherwise refuse to start. In this case, nothing can be done. Besides of that, everything other (achievements, network functions, connection with Steam Workshop) should still work.
+Q: Does it have any disadvantages?  
+A: Some apps insist to be started from Steam directly (steam://rungameid) and otherwise refuse to start. In this case, nothing can be done. Besides of that, everything other (achievements, network functions, connection with Steam Workshop) should still work.  
 
 
 
