@@ -35,7 +35,7 @@ You can download latest release from: https://github.com/Senliast/Windows_script
 
 # Questions and answers
 Q: How does it work?  
-A: This script removes the "appmanifest" file, which Steam uses to detect that an app or game is installed and which holds information about the app. After removing it, Steam does not see the app anymore and therefore will not update it anymore?  
+A: This script removes the "appmanifest" file, which Steam uses to detect that an app or game is installed and which holds information about the app. After removing it, Steam does not see the app anymore and therefore will not update it anymore.  
 
 Q: Does it have any disadvantages?  
 A: Some apps insist to be started from Steam directly (steam://rungameid) and otherwise refuse to start. In this case, nothing can be done. Besides of that, everything other (achievements, network functions, connection with Steam Workshop) should still work.  
