@@ -56,3 +56,6 @@ https://ss64.com/ps/syntax-arrays.html
 https://learn.microsoft.com/de-de/powershell/scripting/learn/deep-dives/everything-about-arrays?view=powershell-7.3  
 https://www.itprotoday.com/powershell/how-add-new-line-powershell-string  
 https://stackoverflow.com/questions/9701840/how-to-create-a-shortcut-using-powershell  
+
+# Key words
+Steam, disable Steam games updates, disable Steam games auto updates, start Steam game without update, skip Steam game update, old version of Steam game
