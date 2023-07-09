@@ -58,4 +58,4 @@ https://www.itprotoday.com/powershell/how-add-new-line-powershell-string
 https://stackoverflow.com/questions/9701840/how-to-create-a-shortcut-using-powershell  
 
 # Key words
-Steam, disable Steam games updates, disable Steam games auto updates, start Steam game without update, skip Steam game update, old version of Steam game
+Steam, disable Steam games updates, disable Steam games auto updates, start Steam game without update, skip Steam game update, old version of Steam game, Steam update manager, Steam games update manager
