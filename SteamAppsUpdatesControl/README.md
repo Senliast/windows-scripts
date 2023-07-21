@@ -1,11 +1,13 @@
-# General
+# Steam-apps updates control  
+## About
 This script makes it possible to control the automatic updates of apps and games downloaded from Steam. It can be useful, if you would like to play a singleplayer game with mods (for example, the mods are available only for older version of a game) or use an older version of an app from Steam for some reason. Also, for those apps that have auto-updates disabled using this script, new Steam Workshop items will not be downloaded, existing ones will not be updated, and unsubscribed ones will not be removed. In combination with for example, Steam Depot Downloader (https://github.com/SteamRE/DepotDownloader) you can download older versions of apps and games even after you already updated and hold the old verion.
 
 Obviously, as this is a PowerShell script, the execution of PowerShell scripts must be allowed on your system, in order for it to work. This script will at all case work on Windows 8 and newer, i am not sure about Windows 7, as PowerShell here is on very early state and may lack some functions. To start the script after installation - open the Steam-apps updates control.lnk .
 
-You can download latest release from: https://github.com/Senliast/Windows_scripts/releases/tag/SteamAppsUpdatesControl_v1.0 (please download zip-file).
+## Download
+You can download latest release from: https://github.com/Senliast/windows-scripts/releases/tag/SteamAppsUpdatesControl-v1.0 (please download zip-file).
 
-# Installation
+## Installation
 1. Enable execution of PowerShell scripts on your system, if not already. In order to do this:
  - for Windows "Home" editions:
    1. Start PowerShell as administrator.
@@ -15,10 +17,10 @@ You can download latest release from: https://github.com/Senliast/Windows_script
    1. Open Group Policy Editor.
    2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
    3. Open the setting "Allow script executing", select "Allow all scripts", press OK.
-2. Place the files and folders (except Info.txt and Steam-apps updates control.lnk) into C:\ServiceData\SteamAppsUpdatesControl\ . If you want to place it somewhere else - edit the path in the SteamAppsUpdatesControl.bat and Steam-apps updates control.lnk .
+2. Place the files and folders (except Info.txt and Steam-apps updates control.lnk) into C:\ServiceData\SteamAppsUpdatesControl\ .
 3. Place the Steam-apps updates control.lnk (shortcut) in a comfortable location for you (for example on Desktop). Start it in order to start the script.
 
-# Uninstalling
+## Uninstalling
 1. Remove all apps from list.
 2. Remove all files from the script.
 3. If you dont use any other PowerShell scripts - disable script execution:
