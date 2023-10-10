@@ -1,1 +1,2 @@
-start powershell.exe -file C:\ServiceData\SteamAppsUpdatesControl\SteamAppsUpdatesControl.ps1
+SET mypath=%~dp0
+start powershell.exe -file %mypath:~0,-1%\SteamAppsUpdatesControl.ps1
