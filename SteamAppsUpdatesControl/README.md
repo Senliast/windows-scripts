@@ -39,7 +39,7 @@ You can download latest release from: https://github.com/Senliast/windows-script
 
 
 
-# Questions and answers
+## Questions and answers
 Q: How does it work?  
 A: This script removes the "appmanifest" file, which Steam uses to detect that an app or game is installed and which holds information about the app. After removing it, Steam does not see the app anymore and therefore will not update it anymore.  
 
@@ -48,7 +48,7 @@ A: Some apps insist to be started from Steam directly (steam://rungameid) and ot
 
 
 
-# Copyright and 3rd-party authors and sources
+## Copyright and 3rd-party authors and sources
 The information from following websites and authors has been used for creating this script:  
 https://developer.valvesoftware.com/  
 https://www.makeuseof.com/how-to-downgrade-steam-games/  
@@ -63,5 +63,5 @@ https://learn.microsoft.com/de-de/powershell/scripting/learn/deep-dives/everythi
 https://www.itprotoday.com/powershell/how-add-new-line-powershell-string  
 https://stackoverflow.com/questions/9701840/how-to-create-a-shortcut-using-powershell  
 
-# Key words
+## Key words
 Steam, disable Steam games updates, disable Steam games auto updates, start Steam game without update, skip Steam game update, old version of Steam game, Steam update manager, Steam games update manager
