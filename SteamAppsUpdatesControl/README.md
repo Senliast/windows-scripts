@@ -11,31 +11,31 @@ You can download latest release from: https://github.com/Senliast/windows-script
 
 ## Installation
 1. Enable execution of PowerShell scripts on your system, if not already. In order to do this:
- - for Windows "Home" editions:
-   1. Start PowerShell as administrator.
-   2. Type "Set-ExecutionPolicy -Scope LocalMachine Unrestricted", press enter.
-   3. Confirm the prompt.
- - for Windows "Pro" editions:
-   1. Open Group Policy Editor.
-   2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
-   3. Open the setting "Allow script executing", select "Allow all scripts", press OK.
+   - for Windows "Home" editions:
+     1. Start PowerShell as administrator.
+     2. Type "Set-ExecutionPolicy -Scope LocalMachine Unrestricted", press enter.
+     3. Confirm the prompt.
+   - for Windows "Pro" editions:
+     1. Open Group Policy Editor.
+     2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
+     3. Open the setting "Allow script executing", select "Allow all scripts", press OK.
 2. Place the files and folders from the "Script files" folder into the default folder "C:\ServiceData\SteamAppsUpdatesControl\" or into other, if you want.
 3. You need this step only if you placed the files into other directory then default:
- - open properties of the Steam-apps updates control.lnk (shortcut) from "Extras" folder and make sure that the "target" is pointing to the "SteamAppsUpdatesControl.bat" file and the "start in" - to its parent directory.
+   - open properties of the Steam-apps updates control.lnk (shortcut) from "Extras" folder and make sure that the "target" is pointing to the "SteamAppsUpdatesControl.bat" file and the "start in" - to its parent directory.
 4. Place the Steam-apps updates control.lnk (shortcut) in a comfortable location for you (for example on Desktop). Start it in order to start the script.
 
 ## Uninstalling
 1. Remove all apps from list.
 2. Remove all files from the script.
 3. If you dont use any other PowerShell scripts - disable script execution:
- - for Windows "Home" editions:
-   1. Start PowerShell as administrator.
-   2. Type "Set-ExecutionPolicy -Scope LocalMachine Undefined", press enter.
-   3. Confirm the prompt.
- - for Windows "Pro" editions:
-   1. Open Group Policy Editor.
-   2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
-   3. Open the setting "Allow script executing", select "Not configured", press OK.
+   - for Windows "Home" editions:
+     1. Start PowerShell as administrator.
+     2. Type "Set-ExecutionPolicy -Scope LocalMachine Undefined", press enter.
+     3. Confirm the prompt.
+   - for Windows "Pro" editions:
+     1. Open Group Policy Editor.
+     2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
+     3. Open the setting "Allow script executing", select "Not configured", press OK.
 
 
 
