@@ -1,4 +1,4 @@
-﻿# SteamAppsUpdatesControl v1.0 by @Senliast
+﻿# SteamAppsUpdatesControl v2.0 by @Senliast
 # 
 # The information from following websites and authors has been used for creating this script:
 # https://developer.valvesoftware.com/
@@ -28,7 +28,7 @@ if ($language[0].LanguageTag -like "*de*")
     $textEnterAppShortcutName = 'Die Verknüpfung der App konnte nicht automatisch gefunden werden. Gib den Namen der Verknüpfung der App ein, so, wie es im Windows-Start-Menu angezeigt wird. Es ist auch möglich, ein Teil davon einzugeben.'
     $textNoShortcutFound = 'Die Verknüpfung der App konnte nicht gefunden werden. Stelle sicher, dass es richtig geschrieben ist und versuche eventuell, nach einem Teil der Namen zu suchen.'
     $textFootnotesTitle = 'Info: '
-    $textFootnotes = 'Beachte, dass dieser Skript nicht mit allen Apps genutzt werden kann. Apps, die vom Steam-Prozess abhängig sind, oder Lizenz über Steam überprüfen, könnten den Start verweigern. Der Skript kann auch nichts machen, wenn eine App nach Updates prüft und den Start verweigert, falls es erkennt, dass es nicht aktuell ist (z.B. Multiplayer-Spiele). Dieser Skript kann nur verhindern, dass Steam eine App aktualisiert. Nachdem die Updates für Apps blockiert wurden, wird es nicht mehr möglich sein, diese Apps aus dem Steam-Bibliothek zu starten. Dabei ist es wichtig, diese als Administrator zu starten. Diese müssen dann über Windows-Start-Menü gestartet werden. Daher, falls du eine Verknüpfung zu der App irgendwo, außer im Windows-Start-Menü (z.B. auf dem Desktop) hast - lösche diese und nimm die neu erstelle Verknüpfung aus dem Windows-Start-Menü. Für die Apps, für die die automatische Updates mithilfe von diesem Skript deaktiviert wurden, werden auch keine neue Steam Workshop Items heruntergeleden, keine Vorhandene aktualisiert und Keine, die abbestellt wurden, entfernt.'
+    $textFootnotes = 'Beachte, dass dieser Skript nicht mit allen Apps genutzt werden kann. Apps, die vom Steam-Prozess abhängig sind, oder Lizenz über Steam überprüfen, könnten den Start verweigern. Der Skript kann auch nichts machen, wenn eine App nach Updates prüft und den Start verweigert, falls es erkennt, dass es nicht aktuell ist (z.B. Multiplayer-Spiele). Dieser Skript kann nur verhindern, dass Steam eine App aktualisiert. Nachdem die Updates für Apps blockiert wurden, wird es nicht mehr möglich sein, diese Apps aus dem Steam-Bibliothek zu starten. Diese müssen dann über Windows-Start-Menü gestartet werden. Daher, falls du eine Verknüpfung zu der App irgendwo, außer im Windows-Start-Menü (z.B. auf dem Desktop) hast - lösche diese und nimm die neu erstelle Verknüpfung aus dem Windows-Start-Menü. Für die Apps, für die die automatische Updates mithilfe von diesem Skript deaktiviert wurden, werden auch keine neue Steam Workshop Items heruntergeleden, keine Vorhandene aktualisiert und Keine, die abbestellt wurden, entfernt.'
     $textNoAppToEnableUpdatesForFound = 'App wurde nicht gefunden. Stelle sicher, dass sie in der Liste von Apps mit blockierten Updates enthalten ist und überprüfe, ob der Name richtig geschrieben ist.'
     $textNotASteamApp = 'Dies ist keine Steam-App.'
     $textListIsActive = 'Die Liste ist aktiv, die Updates für diese Apps werden blockiert.'
@@ -66,6 +66,58 @@ if ($language[0].LanguageTag -like "*de*")
     $textNowCloseTheAppAndSteam = 'Schließe nun die App und Steam komplett, sodass diese auch im System-Tray nicht angezeigt werden.'
     $textDoneListIsInactive = 'Fertig. Beachte, dass diese Änderungen zurzeit nicht gelten, da die Liste deaktiviert ist.'
     $textFollowingShortcutWasFound = 'Folgende Verknüpfung wurde gefunden: '
+
+}
+elseif ($language[0].LanguageTag -like "*ru*")
+{
+    # russian
+    $textTitle = 'Утилита управления обновлениями приложений Steam'
+    $textTitleLoadingConfiguration = 'Загружаю конфигурацию...'
+    $textFollowingAppsAreOnBlacklist = 'Следующие приложения находятся в чёрном списке:'
+    $textEnterAppNameToDisableUpdates = 'Сначала откройте приложение Steam, для которого вы хотите отключить обновления. Если для этого приложения уже есть обновления, которые вы не хотите устанавливать, запустите Steam в автономном режиме или отключитесь от Интернета. Если это полноэкранное приложение, сверните его. Затем наведите указатель мыши на значок приложения на панели задач — появится предварительный просмотр. Укажите здесь название приложения из предварительного просмотра. Также возможно указать его частично.'
+    $textNoAppFound = 'Подходящего приложения не найдено. Убедитесь, что имя приложения/путь к исполняемому файлу/имя процесса введены правильно, приложение установлено и отображается в Steam.'
+    $textEnterAppNameToEnableUpdates = 'Укажите название приложения, для которого вы хотите включить обновления. Укажите имя, как оно указано в этом списке (но без «-»). Также возможно указать его частично.'
+    $textEnterAppShortcutName = 'Ярлык приложения не удалось найти автоматически. Укажите имя ярлыка приложения, как оно отображается в меню «Пуск» Windows. Также возможно указать его частично.'
+    $textNoShortcutFound = 'Ярлык приложения не найден. Убедитесь, что имя написано правильно, и попробуйте поискать имени частично.'
+    $textFootnotesTitle = 'Обратите внимание: '
+    $textFootnotes = 'Обратите внимание, что этот скрипт можно использовать не со всеми приложениями. Приложения, зависящие от процесса Steam или проверки лицензий через Steam, могут отказаться запускаться. Скрипт также не сможет помочь, если приложение проверяет наличие обновлений и отказывается запускаться, если обнаруживает, что оно не обновлено (например, многопользовательские игры). Этот скрипт может только помешать Steam обновить приложение. После блокировки обновлений приложений запуск этих приложений из библиотеки Steam станет невозможен. Затем их необходимо запустить через меню «Пуск» Windows. Поэтому, если у вас есть ярлык приложения где-то за пределами меню «Пуск» Windows (например, на рабочем столе) — удалите его и возьмите вновь созданный ярлык из меню «Пуск» Windows. Для приложений, у которых с помощью этого скрипта отключены автоматические обновления, новые элементы Мастерской Steam не будут загружены, существующие не будут обновлены и никакие отписанные элементы не будут удалены.'
+    $textNoAppToEnableUpdatesForFound = 'Приложение не найдено. Убедитесь, что оно включено в список приложений с заблокированными обновлениями, и проверьте правильность написания имени.'
+    $textNotASteamApp = 'Это не приложение Steam.'
+    $textListIsActive = 'Список активен, обновления для этих приложений заблокированы.'
+    $textListIsInactive = 'Список отключён, обновления для этих приложений разрешены.'
+    $textTooManyProcessesFound = 'Найдено слишком много совпадений. Постарайся точнее написать название процесса.'
+    $textTooManyWindowsFound = 'Найдено слишком много совпадений. Попробуйте указать более конкретное название окна и убедитесь, что ни одно другое окно (например, активная вкладка в браузере) не имеет такого же названия.'
+    $textSelectionPlaceholder = '     '
+    $textContinue = 'Продолжить'
+    $textCancel = 'Отмена'
+    $textExit = 'Выход'
+    $textAddApp = 'Добавить приложение'
+    $textRemoveApp = 'Удалить приложение'
+    $textActivateList = 'Включить список'
+    $textDeactivateList = 'Отключить список'
+    $textEnterOptionNumber = 'Укажите номер опции'
+    $textSearchForWindowTitle = 'Поиск с помощью названия окна'
+    $textSearchForProcessName = 'Поиск с помощью названия процесса'
+    $textEnterPath = 'Укажите путь исполняемого файла'
+    $textInvalidInput = 'Неверный ввод'
+    $textProcessing = 'Обработка...'
+    $textDone = 'Готово.'
+    $textContinueQuestion = 'Продолжить?'
+    $textYes = 'Да'
+    $textPressAnyKeyToContinue = 'Нажмите любую клавишу чтобы продолжить...'
+    $textSteamIsStillOpened = 'Steam всё ещё запущен.'
+    $textAlreadyAddedToBlacklist = 'Уже добавлено.'
+    $textForFollowingAppsUpdatesWillBeBlocked = 'Для следующего приложения обновления будут заблокированы:'
+    $textForFollowingAppsUpdatesWillBeAllowed = 'Для следующего приложения обновления будут разрешены:'
+    $textUpdatesForAllAppsOnBlacklistWillBeBlocked = 'Обновления для всех приложений в списке будут заблокированы. Продолжить?'
+    $textUpdatesForAllAppsOnBlacklistWillBeAllowed = 'Обновления для всех приложений в списке будут разрешены, но список не будет удалён. Продолжить?'
+    $textNowCloseAllSteamAppsAndSteam = 'Полностью закройте Steam, так, чтобы он также не показывался в трее.'
+    $textDoneRestartSteam = 'Готово. Перезапустите Steam, чтобы изменения вступили в силу.'
+    $textOpenAppAndEnterProcessName = 'Откройте приложение (оно может работать в фоне или быть открытым) и введите имя процесса: '
+    $textEnterPathInvite = 'Введите полный путь к исполняемому файлу (с расширением имени). Это может быть файл jar, exe или bat: '
+    $textNowCloseTheAppAndSteam = 'Теперь полностью закройте приложение и Steam, чтобы они не отображались в системном трее.'
+    $textDoneListIsInactive = 'Готово. Обратите внимание, что эти изменения в данный момент не применяются, поскольку список отключён.'
+    $textFollowingShortcutWasFound = 'Была найдена следующая ссылка: '
 
 }
 else
