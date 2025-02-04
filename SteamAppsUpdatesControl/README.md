@@ -20,8 +20,7 @@ You can download latest release from: https://github.com/Senliast/windows-script
      2. Navigate to "Computer configuration > Administrative templates > Windows components > Windows PowerShell"
      3. Open the setting "Allow script executing", select "Allow all scripts", press OK.
 2. Place the files and folders from the "Script files" folder into the default folder "C:\Software_support\SteamAppsUpdatesControl\" or into other, if you want.
-3. You need this step only if you placed the files into other directory then default:
-   - open properties of the Steam-apps updates control.lnk (shortcut) from "Extras" folder and make sure that the "target" is pointing to the "SteamAppsUpdatesControl.bat" file and the "start in" - to its parent directory.
+3. Open properties of the Steam-apps updates control.lnk (shortcut) from "Extras" folder and make sure that the "target" is pointing to the "SteamAppsUpdatesControl.bat" file and the "start in" - to its parent directory.
 4. Place the Steam-apps updates control.lnk (shortcut) in a comfortable location for you (for example on Desktop). Start it in order to start the script.
 
 ## Updating
