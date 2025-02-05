@@ -24,8 +24,7 @@ You can download latest release from: https://github.com/Senliast/windows-script
 4. Place the Steam-apps updates control.lnk (shortcut) in a comfortable location for you (for example on Desktop). Start it in order to start the script.
 
 ## Updating
-1. Delete all files, except "AppList.txt" in the script folder.
-2. Place new files of the script, except "AppList.txt".
+1. Replace "SteamAppsUpdatesContol.ps1" with new file.
 
 ## Uninstalling
 1. Remove all apps from list.
